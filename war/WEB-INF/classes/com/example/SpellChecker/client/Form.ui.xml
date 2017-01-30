@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<header>&nbsp;</header>
+
+		<main>
+			<div id="toprule">&nbsp;</div>
+			<div id="main_header">
+				<div class="form_title">SpellChecker</div>
+				<div class="form_title_desc">Please enter your information below</div>
+				<div class="form_title_legend">Created by Johannes, Lars and Mihai</div>
+			</div>
+
+			<section>
+				<div class="section_head"><b>Name:</b>
+				</div>
+				<g:TextBox ui:field="name" />
+				<g:Label visible="false" ui:field="nameFeedback">Please enter more than 3 characters.</g:Label>
+			</section>
+
+			
+			<section>
+				<div class="section_head">
+					<b>Enter your text here:</b>
+				</div>
+				<g:TextArea ui:field="text" visibleLines="10" width="45em"/>
+			</section>
+
+			<section>
+				<g:Button ui:field="check">Check</g:Button>
+				<g:Button ui:field="reset">Reset</g:Button>
+			</section>
+		</main>
+
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
